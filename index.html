@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skellington Publishing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background: #ffcccb;
+            color: #333;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        h1 {
+            margin: 0;
+        }
+        .welcome {
+            padding: 20px;
+            text-align: center;
+            background: #e0f7fa;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 20px 0;
+        }
+        .type-of-purveyor {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .purveyor {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 15px;
+            width: 30%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .purveyor:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #ffb3e6;
+            color: #333;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .author-link {
+            display: block;
+            margin: 20px 0;
+            text-align: center;
+            color: #007BFF; /* Link color */
+            text-decoration: none;
+        }
+        .author-link:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .book {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Skellington Publishing</h1>
+    </header>
+    <div class="container">
+        <div class="welcome">
+            <h2>Featured Books</h2>
+            <h3>Rivers of Imprisonment: An Introduction To Political Economy</h3>
+            <a href="https://books2read.com/davidroderick" class="author-link">About the Author</a>
+        </div>
+        <h2>Ebook available from the following locations:</h2>
+        <div class="type-of-purveyor">
+            <div class="purveyor">
+                <h3>Libraries</h3>
+                <p>CloudLibrary</p>
+                <p>Overdrive</p>
+                <p>Baker & Taylor</p>
+                <p>Odilo</p>
+                <p>Borrowbox</p>
+                <p>Palace Market Place</p>
+            </div>
+            <div class="purveyor">
+                <h3>Consumers in the United States</h3>
+                <p>Barnes & Noble</p>
+                <p>Fable</p>
+                <h3>Consumers internationally</h3>
+                <p>Vivlio</p>
+                <p>Google Books</p>
+            </div>
+            <div class="purveyor">
+                <h3>Trade customers</h3>
+                <p>Gardners</p>
+            </div>
+        </div>
+        <h2>Printed book available from:</h2>
+        <div class="type-of-purveyor">
+            <div class="purveyor">
+                <h3>Consumers and retailers</h3>
+                <a href="https://www.amazon.co.uk/Rivers-Imprisonment-Introduction-Political-Economy/dp/B0DNBGXXBS/ref=sr_1_1"> <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo" style="width: 70px; height: auto;"></a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Publishing House. All rights reserved.</p>
+    </footer>
+</body>
+</html>
