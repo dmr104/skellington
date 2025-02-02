@@ -51,6 +51,9 @@
         .purveyor:hover {
             transform: scale(1.05);
         }
+        .purveyor a {
+          display: block;
+        }
         footer {
             text-align: center;
             padding: 20px 0;
@@ -59,6 +62,9 @@
             position: relative;
             bottom: 0;
             width: 100%;
+        }
+        h3 {
+          text-decoration: underline;
         }
         .author-link {
             display: block;
@@ -69,6 +75,36 @@
         }
         .author-link:hover {
             text-decoration: underline;
+        }
+        .ref-link {
+            display: block;
+            margin: 20px 0;
+            text-align: left;
+            color: #2f9b04; /* Link color */
+            text-decoration: none;
+        }
+        .ref-link:hover {
+            text-decoration: underline;
+        }
+        .standard-link {
+            display: block;
+            margin: 20px 0;
+            text-align: left;
+            color: #f014f0; /* Link color */
+            text-decoration: none;
+        }
+        .standard-link:hover {
+            text-decoration: underline;
+        }
+        .audio {
+            display: flex;
+            flex-direction: column; /* Stack links vertically */
+            justify-content: center;
+            align-items: center; /* Center links horizontally */
+            gap: 10px;
+        }
+        .no-underline{
+          text-decoration: none;
         }
         @media (max-width: 768px) {
             .book {
@@ -84,39 +120,51 @@
     <div class="container">
         <div class="welcome">
             <h2>Featured Books</h2>
-            <h3>Rivers of Imprisonment: An Introduction To Political Economy</h3>
+            <h3 class="no-underline">Rivers of Imprisonment: An Introduction To Political Economy</h3>
             <a href="https://books2read.com/davidroderick" class="author-link">About the Author</a>
         </div>
         <h2>Ebook available from the following locations:</h2>
         <div class="type-of-purveyor">
             <div class="purveyor">
                 <h3>Libraries</h3>
-                <p>CloudLibrary</p>
-                <p>Overdrive</p>
-                <p>Baker & Taylor</p>
-                <p>Odilo</p>
-                <p>Borrowbox</p>
-                <p>Palace Market Place</p>
+                <a href="http://www.yourcloudlibrary.com" class=standard-link>CloudLibrary</a>
+                <a href="https://www.overdrive.com/media/11395655/rivers-of-imprisonment" class=ref-link>Overdrive</a>
+                <a href="https://www.baker-taylor.com" class=standard-link>Baker & Taylor</a>
+                <a href="https://help.odilo.io/en/libraries" class=standard-link>Odilo</a>
+                <a href="https://www.borrowbox.com" class=standard-link>Borrowbox</a>
+                <a href="https://market.thepalaceproject.org/item/6390178" class=ref-link>Palace Marketplace</a>
             </div>
             <div class="purveyor">
                 <h3>Consumers in the United States</h3>
-                <p>Barnes & Noble</p>
-                <p>Fable</p>
+                <a href="https://www.barnesandnoble.com/w/rivers-of-imprisonment-david-roderick/1146628799?ean=2940180194770" class=standard-link>Barnes & Noble</a>
+                <a href="https://fable.co/book/x-9798230934356" class=ref-link>Fable</a>
                 <h3>Consumers internationally</h3>
-                <p>Vivlio</p>
-                <p>Google Books</p>
+                <a href="https://shop.vivlio.com/product/9798230934356_9798230934356_10020/rivers-of-imprisonment" class=ref-link>Vivlio</a>
+                <p>Google Books (to be finalised)</p>
             </div>
             <div class="purveyor">
                 <h3>Trade customers</h3>
-                <p>Gardners</p>
+                <a href="https://www.gardners.com" class=standard-link>Gardners</a>
             </div>
         </div>
         <h2>Printed book available from:</h2>
         <div class="type-of-purveyor">
-            <div class="purveyor">
-                <h3>Consumers and retailers</h3>
-                <a href="https://www.amazon.co.uk/Rivers-Imprisonment-Introduction-Political-Economy/dp/B0DNBGXXBS/ref=sr_1_1"> <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo" style="width: 70px; height: auto;"></a>
+            <div class="purveyor audio">
+                <a href="https://www.amazon.co.uk/Rivers-Imprisonment-Introduction-Political-Economy/dp/B0DNBGXXBS/ref=sr_1_1"> <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo" style="width: 70px; height: auto; margin-top: 12px;"></a>
             </div>
+        </div>
+        <h2>Audio book freely available from:</h2>
+        <div class="type-of-purveyor">
+          <div class="purveyor audio">
+            <a href="https://www.youtube.com/@David_Roderick" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/My_Project.jpg" alt="YouTube Logo" style="width: 170px; height: auto;"></a>
+          <a href="https://podcasters.spotify.com/pod/show/david-roderick32" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Spotify_logo_with_text.svg" alt="YouTube Logo" style="width: 100px; height: auto" id="spotify"></a>
+          <a href="https://podcasts.apple.com/us/podcast/rivers-of-imprisonment/id1777969904" target="_blank">
+<img src="https://images.squarespace-cdn.com/content/v1/5ffb6fbbd7c44740fac459ea/b8db97d7-3bf4-4d17-abe8-7ae0ad848ef9/listen-on-apple-podcasts-logo.png?format=300w%20300w" alt="YouTube Logo" style="width: 170px; height: auto; margin-top: 20px;"></a>
+          <a href="https://music.amazon.co.uk/podcasts/2b61fd3e-0852-4357-99c1-288ce6c14ebd/rivers-of-imprisonment" target="_blank">
+<img src="https://upload.wikimedia.org/wikipedia/commons/b/be/Stacked_Amazon_Music_CyanOnCharcoal_Circle_RGB.png" alt="YouTube Logo" style="width: 70px; height: auto; margin-top: 20px;"></a>
+          </div>
         </div>
     </div>
     <footer>
